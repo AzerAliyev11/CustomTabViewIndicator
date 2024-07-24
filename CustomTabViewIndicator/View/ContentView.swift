@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var currentPage: Int = 0 //current page index
+    @State var currentPage: Int = 0 //current page index of tabview
     @State var pageMidX: CGFloat = 0
     @State var screenMidX: CGFloat = 0
     @State var screenMaxX: CGFloat = 0
-    @State var difference: CGFloat = 0
+    @State var difference: CGFloat = 0 //difference betweeb pageMidX and screenMidX also using currentPage
     
     var body: some View {
         GeometryReader { geometry in
@@ -126,29 +126,6 @@ struct ContentView: View {
             }
         }
         
-    }
-}
-
-struct IndicatorView : View {
-    
-    @Binding var currentPage: Int
-    @Binding var screenMidX: CGFloat
-    @Binding var difference: CGFloat
-    
-    var body: some View {
-        HStack(spacing: 10) {
-            ForEach(0...2, id: \.self) { tab in
-                Capsule()
-                    .frame(width: (tab == currentPage) ? 28 : 9, height: 5)
-                    .foregroundStyle(Color((tab == currentPage) ? "Color1" : "Color2"))
-            }
-        }
-        .overlay(alignment: .leading) {
-            Capsule()
-                .fill(Color("Color1"))
-                .frame(width: 28)
-                .padding(.leading, 19 * (difference/screenMidX))
-        }
     }
 }
 

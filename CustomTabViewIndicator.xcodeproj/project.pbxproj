@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9C664252C5141AA0095A977 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C664242C5141AA0095A977 /* IndicatorView.swift */; };
 		D9FBD03B2C4E7B61003DC503 /* CustomTabViewIndicatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FBD03A2C4E7B61003DC503 /* CustomTabViewIndicatorApp.swift */; };
 		D9FBD03D2C4E7B61003DC503 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FBD03C2C4E7B61003DC503 /* ContentView.swift */; };
 		D9FBD03F2C4E7B62003DC503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9FBD03E2C4E7B62003DC503 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D9C664242C5141AA0095A977 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		D9FBD0372C4E7B61003DC503 /* CustomTabViewIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabViewIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FBD03A2C4E7B61003DC503 /* CustomTabViewIndicatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewIndicatorApp.swift; sourceTree = "<group>"; };
 		D9FBD03C2C4E7B61003DC503 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				D9FBD03C2C4E7B61003DC503 /* ContentView.swift */,
 				D9FBD04B2C4EA1B5003DC503 /* WelcomeScreenCardView.swift */,
+				D9C664242C5141AA0095A977 /* IndicatorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				D9FBD03D2C4E7B61003DC503 /* ContentView.swift in Sources */,
 				D9FBD03B2C4E7B61003DC503 /* CustomTabViewIndicatorApp.swift in Sources */,
+				D9C664252C5141AA0095A977 /* IndicatorView.swift in Sources */,
 				D9FBD04C2C4EA1B5003DC503 /* WelcomeScreenCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
