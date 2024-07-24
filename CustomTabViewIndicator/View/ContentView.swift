@@ -20,6 +20,21 @@ struct ContentView: View {
                 
                 Spacer()
                 
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        withAnimation {
+                            currentPage = 2
+                        }
+                    }, label: {
+                        Text("Skip")
+                            .foregroundStyle(Color(.text2))
+                            .font(.system(size: 14))
+                    })
+                }
+                .padding(.trailing, 24)
+                .opacity((currentPage == 2) ? 0 : 1)
+                
                 TabView(selection: $currentPage) {
                     GeometryReader {geometry in
                         WelcomeScreenCardView(personIcon: "PersonIcon1",
